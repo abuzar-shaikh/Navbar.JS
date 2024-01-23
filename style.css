@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+a,
+li {
+  margin: 0;
+  font-size: 1.8rem;
+}
+.logo{
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: 3rem;
+    border: 1px solid wheat;
+    padding: 5px;
+    
+}
+.container ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  height: 10rem;
+  cursor: pointer;
+}
+.container ul li {
+  height: 10rem;
+  line-height: 10rem;
+  /* background-color: yellow; */
+  position: relative;
+  color: aliceblue;
+}
+header {
+  background-color: black;
+  color: white;
+  height: 10rem;
+  /* border: 2px solid red; */
+  display: grid;
+  place-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.container {
+  width: 80%;
+  height: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid yellow; */
+}
+.container .drop-down {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  height: auto;
+  min-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  align-items: center;
+  padding: 2rem 0;
+  gap: 2rem;
+  visibility: hidden;
+  opacity: 0;
+  top: 15rem;
+  transition: all 0.3s linear;
+}
+.container ul li:hover > .drop-down {
+  visibility: visible;
+  opacity: 1;
+  top: 10rem;
+  /* border: 1px solid red; */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.container ul li:hover {
+  color: red;
+}
+.container .drop-down li {
+  height: 3rem;
+  line-height: 3rem;
+  /* border: 1px solid gray; */
+  width: 100%;
+  text-align: center;
+  transition: all 0.3s linear;
+}
+.container .drop-down li:hover {
+  background-color: white;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;s
+}
